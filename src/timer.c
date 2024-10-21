@@ -2,11 +2,15 @@
 #include <pico/stdlib.h>
 #include <pico/sync.h>
 
+#define OUT_PIN 8
+#define DELAY_MS 93
+
 int toggle = 1;
 bool timer_callback(__unused struct repeating_timer *t)
 {
     toggle = !toggle;
     gpio_put(OUT_PIN, toggle);
+
     return true;
 }
 
