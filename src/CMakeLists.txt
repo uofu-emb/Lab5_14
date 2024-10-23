@@ -108,8 +108,8 @@ pico_add_extra_outputs(gpio_interrupt)
 
 
 add_custom_target(flashsleep picotool load -f $<TARGET_FILE:sleep> DEPENDS sleep)
-add_custom_target(flashdelay picotool load -f $<TARGET_FILE:sleep> DEPENDS sleep)
-add_custom_target(flashtimer picotool load -f $<TARGET_FILE:sleep> DEPENDS sleep)
-add_custom_target(flashgpio_interrupt picotool load -f $<TARGET_FILE:sleep> DEPENDS sleep)
+add_custom_target(flashdelay picotool load -f $<TARGET_FILE:sleep> DEPENDS delay)
+add_custom_target(flashtimer picotool load -f $<TARGET_FILE:sleep> DEPENDS timer)
+add_custom_target(flashgpio_interrupt picotool load -f $<TARGET_FILE:sleep> DEPENDS gpio_interrupt)
 
 
