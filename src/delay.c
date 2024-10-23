@@ -4,7 +4,7 @@
 #include <task.h>
 
 #define OUT_PIN 8
-#define DELAY_MS 93
+#define DELAY_MS 100
 
 void main_task(__unused void *params)
 {
