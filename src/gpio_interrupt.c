@@ -11,13 +11,6 @@ int toggle = 1;
 QueueHandle_t msg_queue;
 void irq_callback(uint gpio, uint32_t event_mask)
 {
-//    if (gpio != IN_PIN) return;
-//    toggle = !toggle;
-//     if (event_mask & GPIO_IRQ_EDGE_RISE) {
-//         gpio_put(OUT_PIN, true);
-//     } else if (event_mask & GPIO_IRQ_EDGE_FALL) {
-//         gpio_put(OUT_PIN, false);
-//     }
     // for(int i = 0; i<100000; i++){
     //     __nop();
 
