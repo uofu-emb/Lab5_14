@@ -1,4 +1,4 @@
-# Measuring 
+[![CMake](https://github.com/uofu-emb/Lab5_14/actions/workflows/main.yml/badge.svg?branch=working_branch)](https://github.com/uofu-emb/Lab5_14/actions/workflows/main.yml)
 
 # Sleep.c 
 measured a 36 ms drift over a 1 hour period
